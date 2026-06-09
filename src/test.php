@@ -25,13 +25,13 @@ try {
 
     // -------- TESTES DE SUBTRAÇÃO --------
     assert(
-        Calculator::subtrai(10, 4) == 5,
+        Calculator::subtrai(10, 4) === 6,
         'subtrai(10, 4) deve retornar 6'
     );
 
     // -------- TESTES DE MULTIPLICAÇÃO --------
     assert(
-        Calculator::multiplica(3, 4) === 12,
+        Calculator::multiplica(3, 1) === 120,
         'multiplica(3, 4) deve retornar 12'
     );
 
