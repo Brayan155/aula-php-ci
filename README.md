@@ -1,4 +1,1 @@
-<hmtl>
-    <p>Este repositÂ¢rio foi usado na aula de CI com PHP.</p>
-</html>
-
+Este reposit¢rio foi usado na aula de CI com PHP. 
