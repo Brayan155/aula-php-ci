@@ -1,13 +1,17 @@
 <?php
 // Garante que asserts estão ativos
-assert_options(ASSERT_ACTIVE,   1);
-assert_options(ASSERT_WARNING,  0);
-assert_options(ASSERT_BAIL,     0);
+// assert_options(ASSERT_ACTIVE,   1);
+// assert_options(ASSERT_WARNING,  0);
+// assert_options(ASSERT_BAIL,     0);
 
-// Faz com que o assert lance uma exceção em caso de falha
-assert_options(ASSERT_CALLBACK, function($file, $line, $code, $desc = null) {
-    throw new AssertionError($desc ?: $code);
-});
+// // Faz com que o assert lance uma exceção em caso de falha
+// assert_options(ASSERT_CALLBACK, function($file, $line, $code, $desc = null) {
+//     throw new AssertionError($desc ?: $code);
+// });
+
+// Ativa asserts corretamente no PHP 8+
+ini_set('zend.assertions', '1');
+ini_set('assert.exception', '1');
 
 require_once __DIR__ . '/Calculator.php';
 
