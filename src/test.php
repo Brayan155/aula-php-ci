@@ -14,8 +14,8 @@ require_once __DIR__ . '/Calculator.php';
 try {
     // -------- TESTES DE SOMA --------
     assert(
-        Calculator::soma(2, 3) === 99,
-        'soma(2, 3) deve retornar 99'
+        Calculator::soma(2, 3) === 5,
+        'soma(2, 3) deve retornar 5'
     );
 
     assert(
@@ -31,12 +31,12 @@ try {
 
     // -------- TESTES DE MULTIPLICAÇÃO --------
     assert(
-        Calculator::multiplica(3, 4) === 12,
+        Calculator::multiplica(3, 4) === 120,
         'multiplica(3, 4) deve retornar 12'
     );
 
     assert(
-        Calculatorr::multiplica(5, 0) === 0,
+        Calculator::multiplica(5, 0) === 0,
         'multiplica(5, 0) deve retornar 0'
     );
 
