@@ -25,3 +25,4 @@ jobs:
       # 3) Rodar os testes
       - name: Executar testes PHP
         run: php src/test.php
+        ini-values: zend.asserctions=1
