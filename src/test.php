@@ -31,7 +31,7 @@ try {
 
     // -------- TESTES DE MULTIPLICAÇÃO --------
     assert(
-        Calculator::multiplica(3, 1) === 120,
+        Calculator::multiplica(3, 4) === 120,
         'multiplica(3, 4) deve retornar 12'
     );
 
